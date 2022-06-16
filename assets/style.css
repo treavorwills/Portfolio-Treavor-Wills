@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    background-color: #94618E;
+}
+
+body {
+    background-color: #f4decb;
+}
+
+  nav ul {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #f4decb;
+  }
+
+  li a:active {
+    background-color: #49274A;
+    color: white;
+  }
+
+main section {
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 300px;
+    background-color: #49274A;
+    color: #f8eee7;
+}
+
+section {
+    display: block;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.about .float-right {
+    float: right;
+    margin-left: 25px;
+}
