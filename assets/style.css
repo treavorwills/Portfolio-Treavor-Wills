@@ -1,13 +1,35 @@
+/* Grid */
+.container {
+  background-color: #f4decb;
+  display: grid;
+  width: 90%;
+  margin:auto;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+
+  grid-template-areas:
+  "header header header"
+  "main main ."
+  "footer footer footer";
+}
+
 header {
     display: flex;
     background-color: #94618E;
+    grid-area: header;
 }
 
-body {
-    background-color: #f4decb;
+main {
+  grid-area: main;
+  border: 8px solid red;
 }
 
-  nav ul {
+footer {
+  grid-area: footer;
+  border: 3px dashed yellowgreen;
+}
+
+nav ul {
     color: black;
     padding: 14px 20px;
     text-decoration: none;
@@ -51,3 +73,6 @@ section {
     float: right;
     margin-left: 25px;
 }
+
+
+
