@@ -14,7 +14,7 @@
 }
 
 header {
-    display: flex;
+    /* display: flex; */
     background-color: #94618E;
     grid-area: header;
 }
@@ -32,16 +32,27 @@ footer {
 nav ul {
     color: black;
     padding: 14px 20px;
-    text-decoration: none;
     text-align: center;
   }
-  
-  li a {
+
+nav ul li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+@media (max-width: 14000px) {
+  nav ul li {
+    display: inline-block;
+  }    
+}
+
+@media screen and (max-width: 750px) {
+  nav ul li {
     display: block;
-    color: black;
-    padding: 8px 16px;
-    text-decoration: none;
   }
+}
 
   li a:hover {
     background-color: #f4decb;
@@ -52,11 +63,6 @@ nav ul {
     color: white;
   }
 
-section {
-    display: block;
-    height: auto;
-}
-
 main section {
     margin-bottom: 20px;
     padding: 10px;
@@ -64,9 +70,18 @@ main section {
     color: #f8eee7;
 }
 
-main #about{
-  height: 300px;
+.about-flex-container{
+  display: flex;
+  justify-content: space-evenly;
 }
+
+.about-flex-container p {
+  border: 3px solid whitesmoke;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+}
+
 
 .work-flex-container {
   display: flex;
@@ -79,10 +94,7 @@ main #about{
   display:flex;
   flex-direction: column;
   max-width: min-content;
-}
-
-.headshot {
-  margin-top: -55px;
+  padding: 20px;
 }
 
 section h2 {
@@ -95,16 +107,10 @@ section h2 {
   padding: 15px;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
 
 p {
   width:100%;
 }
+
+
+
