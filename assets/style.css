@@ -1,6 +1,29 @@
+/* 
+font-family: 'Anton', sans-serif;
+font-family: 'Creepster', cursive;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Lexend', sans-serif;
+font-family: 'Monoton', cursive; 
+font-family: 'Seymour One', sans-serif;
+font-family: 'Sigmar One', cursive;
+*/
+
+:root {
+--light: #93a3b1;
+--medium: #7c898b;
+--dark: #636564;
+--darker: #4c443c;
+--darkest: #322214; 
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--darker);
+}
+
+
 /* Grid */
 .container {
-  background-color: #f4decb;
   display: grid;
   width: 90%;
   margin:auto;
@@ -15,18 +38,38 @@
 
 header {
     /* display: flex; */
-    background-color: #94618E;
+    background-color: var(--darker);
     grid-area: header;
 }
 
+header h1 {
+  font-family: 'Anton', cursive; 
+  font-size: 100px;
+  font-stretch: expanded;
+  padding: 15px;
+  margin: 15px;
+  }
+
+  header h1 span {
+    color: var(--medium);
+  }
+
 main {
   grid-area: main;
-  border: 8px solid red;
+  /* border: 8px solid red; */
+}
+
+main section {
+  margin: 55px;
+}
+
+#about img {
+  border-radius: 15px 50px;
 }
 
 footer {
   grid-area: footer;
-  border: 3px dashed yellowgreen;
+  /* border: 3px dashed yellowgreen; */
 }
 
 nav ul {
@@ -52,10 +95,18 @@ nav ul li a {
   nav ul li {
     display: block;
   }
+
+  header h1 {
+    font-size: 75px;
+  }
+
+  #about img {
+    width:200px;;
+  }
 }
 
   li a:hover {
-    background-color: #f4decb;
+    background-color: var(--medium);
   }
 
   li a:active {
@@ -66,8 +117,9 @@ nav ul li a {
 main section {
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #49274A;
-    color: #f8eee7;
+    background-color: var(--darkest);
+    color: var(--medium);
+    border-radius: 15px 50px;
 }
 
 .about-flex-container{
@@ -76,7 +128,6 @@ main section {
 }
 
 .about-flex-container p {
-  border: 3px solid whitesmoke;
   display: flex;
   align-items: center;
   padding: 5%;
@@ -90,21 +141,27 @@ main section {
 }
 
 .project-flex-container {
-  border: 2px solid yellow;
+  background-color: var(--darker);
   display:flex;
   flex-direction: column;
   max-width: min-content;
   padding: 20px;
+  margin:20px;
 }
 
 section h2 {
   text-align: center;
-  border: 2px solid green;
+  color: var(--medium);
+  background-color: var(--darkest);
+  font-family: 'Anton', sans-serif;
+  font-size: 35px;;
   display: flex;
   width: fit-content;
+  margin-top: -50px;
   margin-left:auto;
   margin-right:auto;
-  padding: 15px;
+  padding: 25px;
+  border-radius: 15px 50px;
 }
 
 
