@@ -40,6 +40,7 @@ header {
     /* display: flex; */
     background-color: var(--darker);
     grid-area: header;
+    margin-bottom: 35px;
 }
 
 header h1 {
@@ -53,15 +54,6 @@ header h1 {
   header h1 span {
     color: var(--medium);
   }
-
-main {
-  grid-area: main;
-  /* border: 8px solid red; */
-}
-
-main section {
-  margin: 55px;
-}
 
 #about img {
   border-radius: 15px 50px;
@@ -115,7 +107,7 @@ nav ul li a {
   }
 
 main section {
-    margin-bottom: 20px;
+    margin-bottom: 55px;
     padding: 10px;
     background-color: var(--darkest);
     color: var(--medium);
@@ -146,9 +138,15 @@ main section {
   background-color: var(--darker);
   display:flex;
   flex-direction: column;
+  width: 100%;
   max-width: min-content;
-  padding: 20px;
-  margin:20px;
+  margin: 3%;
+  align-items: center;
+}
+
+.project-flex-container img {
+  width:300px;
+  height: 300px;
 }
 
 section h2 {
