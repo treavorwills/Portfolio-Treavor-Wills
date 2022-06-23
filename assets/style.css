@@ -18,7 +18,7 @@ font-family: 'Sigmar One', cursive;
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--darker);
+  /* background-color: var(--darker); */
 }
 
 
@@ -37,10 +37,14 @@ html {
 }
 
 header {
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     background-color: var(--darker);
     grid-area: header;
-    margin-bottom: 35px;
+    height: 350px;
+    margin-bottom: 80px;
+    background: url("./img/crankset.jpg") no-repeat 75%;
+    background-size: cover;
 }
 
 header h1 {
@@ -48,7 +52,8 @@ header h1 {
   font-size: 100px;
   font-stretch: expanded;
   padding: 15px;
-  margin: 15px;
+  margin-top: auto;
+  text-align: center;
   }
 
   header h1 span {
@@ -70,11 +75,17 @@ nav ul {
     text-align: center;
   }
 
+nav ul li {
+}
+
 nav ul li a {
   display: block;
   color: black;
   padding: 8px 16px;
   text-decoration: none;
+  /* opacity: 20%; */
+  fill-opacity: 20%;
+  background-color: var(--light);
 }
 
 @media (max-width: 14000px) {
