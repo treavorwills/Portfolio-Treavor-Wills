@@ -157,6 +157,12 @@ main section {
   max-width: min-content;
   margin: 3%;
   align-items: center;
+  border-radius: 15px 50px;
+  overflow: hidden;
+}
+
+.project-flex-container:hover {
+  border-radius: 30px;
 }
 
 .project-flex-container img {
@@ -180,7 +186,8 @@ section h2 {
 }
 
 p {
-  width:100%;
+  padding: 2%;
+  margin: auto;
 }
 
 
