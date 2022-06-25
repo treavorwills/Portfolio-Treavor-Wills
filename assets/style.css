@@ -125,6 +125,10 @@ main section {
     border-radius: 15px 50px;
 }
 
+#empty-work, #empty-about, #empty-contact-info {
+  background-color: white;
+}
+
 .about-flex-container{
   display: flex;
   justify-content: space-evenly;
@@ -137,7 +141,6 @@ main section {
   align-items: center;
   padding: 5%;
 }
-
 
 .work-flex-container {
   display: flex;
@@ -174,7 +177,6 @@ section h2 {
   padding: 25px;
   border-radius: 15px 50px;
 }
-
 
 p {
   width:100%;
