@@ -196,5 +196,10 @@ margin: auto;
 padding-bottom: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--light);
+}
+
 
 
